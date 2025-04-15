@@ -6,7 +6,7 @@ function Footer() {
       {/* Social Links */}
       <div className="flex justify-center space-x-5">
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/Sakshi2048"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -18,7 +18,7 @@ function Footer() {
         </a>
       
         <a
-          href="https://linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/sakshim2048"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -30,7 +30,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://leetcode.com/your-username"
+          href="https://leetcode.com/u/Sakshi_2048/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -43,7 +43,7 @@ function Footer() {
         </a>
 
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:sakshimarbhal248@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -55,7 +55,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://instagram.com/your-username"
+          href="https://www.instagram.com/sakshi_20.48"
           target="_blank"
           rel="noopener noreferrer"
         >

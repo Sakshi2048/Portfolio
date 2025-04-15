@@ -14,7 +14,7 @@ const Hero = () => {
           alt="3D Web Developer Model"
           auto-rotate
           camera-controls
-          style={{ width: "50%", height: "600px" }}
+          style={{ width: "60%", height: "600px" }}
         ></model-viewer>
 
         {/* Text Content on the Right */}

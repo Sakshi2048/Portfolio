@@ -31,10 +31,8 @@ const clubsList = [
   },
 ];
 
-
 function Section() {
   const [activeTab, setActiveTab] = useState("education");
- 
 
   const tabClasses = (tab) =>
     `tab-btn sm:px-6 py-3 w-full sm:w-auto justify-center sm:justify-start title-font font-medium inline-flex items-center leading-none tracking-wider rounded-full ${
@@ -49,12 +47,21 @@ function Section() {
       duration: "2022 - Present",
       degree: "B.E - Computer Engg.",
       logo: "https://img.collegepravesh.com/2017/02/PICT-Logo.jpg",
+      link: "https://www.pict.edu/",
+    },
+    {
+      institute: "Shri Shiv Chhatrapati College, Junnar ",
+      duration: "2020 - 2022",
+      degree: "Higher Secondary School (HSC)",
+      logo: "https://th.bing.com/th/id/OIP.4Q8yotXQLr4q2h8GLtm7BwHaHw?w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2",
+      link: "https://ssccollegejunnar.org/",
     },
     {
       institute: "Jawahar Navodaya Vidyalaya, Pune",
       duration: "2015 - 2020",
       degree: "10th - CBSE",
       logo: "https://jnvalumni.net/media/jnvLogo.png",
+      link: "https://www.navodaya.gov.in/nvs/nvs-school/PUNE/en/home/",
     },
   ];
 
@@ -89,33 +96,32 @@ function Section() {
       logo: "https://evidyut.in/images/logos/12.png",
       title: "AI-ML Virtual Internship",
       date: "January 2025 - March 2025",
+      link: "https://drive.google.com/file/d/1iA6NQvbYXoXsHXfh7vSlNEKKfm8Ugpo3/view?usp=sharing",
+    },
+    {
+      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQHjeDfclaytKg/company-logo_200_200/company-logo_200_200/0/1712674670740/aws_cloud_club_pict_logo?e=1750291200&v=beta&t=v2sUUL9cBtxpNPn0LT25UVVGlS6tk1EoScFVqTR5S7Q",
+      title: "AWS Cloud Fundamentals",
+      date: "August 2024",
+      link: "https://drive.google.com/file/d/11IM_TRsaU2fB9AqjFbNDtfl8fCSV9ZGP/view?usp=drive_link",
     },
     {
       logo: "https://th.bing.com/th/id/OIP.FRF_lnZzWro9V50Ifq7-JQHaEK?rs=1&pid=ImgDetMain",
       title: "Web Design for Web Developers",
       date: "Completed : August 2024",
+      link: "https://drive.google.com/file/d/1yXs_npqSQS24MQPKVBIKpovzDsKW_YHo/view?usp=sharing",
     },
     {
       logo: "https://th.bing.com/th/id/OIP.FRF_lnZzWro9V50Ifq7-JQHaEK?rs=1&pid=ImgDetMain",
       title: "Coding Interview Preparation - The Softer Skills",
       date: "Completed : July 2024",
+      link: "https://drive.google.com/file/d/1eEnaiXaOPUzablo_wCmAX5R1PiwWrFiN/view?usp=sharing",
     },
     {
       logo: "https://pictinc.org/assets/logo-d2Ig4sgZ.svg",
       title: "INC'23 - Volunteering & Management ",
       date: "April 2023",
+      link: "https://drive.google.com/file/d/1YB2BdyZGElnGiDXqy9-pbojD8mBYeffy/view?usp=sharing",
     },
-
-    // {
-    //   logo: "https://pictinc.org/assets/logo-d2Ig4sgZ.svg",
-    //   title: "INC'23 - Volunteering & Management ",
-    //   date: "April 2023",
-    // },
-    // {
-    //   logo: "https://pictinc.org/assets/logo-d2Ig4sgZ.svg",
-    //   title: "INC'23 - Volunteering & Management ",
-    //   date: "April 2023",
-    // },
   ];
 
   return (
@@ -155,7 +161,7 @@ function Section() {
             <h1 className="text-2xl text-white font-bold title-font mb-6">
               Schools & <span className="text-blue-400">Academics</span>
             </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {educationList.map((edu, idx) => (
                 <div
                   key={idx}
@@ -167,9 +173,15 @@ function Section() {
                     className="w-16 h-16 object-contain rounded"
                   />
                   <div>
-                    <h2 className="text-md font-medium text-yellow-400">
+                    <a
+                      href={edu.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-md font-medium text-yellow-400 hover:underline cursor-pointer"
+                    >
                       {edu.institute}
-                    </h2>
+                    </a>
+
                     <p className="text-sm text-gray-400">{edu.duration}</p>
                     <p className="text-sm">{edu.degree}</p>
                   </div>
@@ -206,38 +218,37 @@ function Section() {
 
         {/* Clubs */}
         {activeTab === "clubs" && (
-  <div className="text-center w-full mb-10 text-white">
-    <h1 className="text-2xl font-bold title-font mb-6">
-      Clubs & <span className="text-blue-400">Societies</span>
-    </h1>
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-      {clubsList.map((club, idx) => (
-        <div
-          key={idx}
-          className="border border-gray-700 rounded-lg p-3 bg-gray-900 text-left"
-        >
-          <div className="flex items-center gap-3 mb-2">
-            <img
-              src={club.logo}
-              alt={club.name}
-              className="w-10 h-10 rounded-full object-cover"
-            />
-            <div>
-              <h3 className="text-md text-blue-400 font-medium">
-                {club.name}
-              </h3>
-              <p className="text-sm text-gray-400">{club.position}</p>
+          <div className="text-center w-full mb-10 text-white">
+            <h1 className="text-2xl font-bold title-font mb-6">
+              Clubs & <span className="text-blue-400">Societies</span>
+            </h1>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {clubsList.map((club, idx) => (
+                <div
+                  key={idx}
+                  className="border border-gray-700 rounded-lg p-3 bg-gray-900 text-left"
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    <img
+                      src={club.logo}
+                      alt={club.name}
+                      className="w-10 h-10 rounded-full object-cover"
+                    />
+                    <div>
+                      <h3 className="text-md text-blue-400 font-medium">
+                        {club.name}
+                      </h3>
+                      <p className="text-sm text-gray-400">{club.position}</p>
+                    </div>
+                  </div>
+                  <div className="text-sm text-gray-300 whitespace-pre-line border-t border-gray-700 pt-2 pl-1">
+                    {club.description}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="text-sm text-gray-300 whitespace-pre-line border-t border-gray-700 pt-2 pl-1">
-            {club.description}
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
-
+        )}
 
         {/* Certificates */}
         {activeTab === "certificates" && (
@@ -257,9 +268,15 @@ function Section() {
                     className="w-12 h-12 p-1 rounded-full object-cover"
                   />
                   <div>
-                    <h3 className="text-md text-gray-100 font-medium">
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-md text-gray-100 font-medium hover:underline cursor-pointer"
+                    >
                       {cert.title}
-                    </h3>
+                    </a>
+
                     <p className="text-sm text-gray-400">{cert.date}</p>
                   </div>
                 </div>
@@ -267,7 +284,6 @@ function Section() {
             </div>
           </div>
         )}
-        
       </div>
     </section>
   );
