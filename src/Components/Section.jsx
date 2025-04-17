@@ -70,24 +70,29 @@ function Section() {
       icon: <Trophy className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "Pulzion Web & App Hackathon",
       description: "Runner-up at Pulzion Web & App Hackathon 2023.",
+      link:"",
     },
     {
       icon: <Award className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "NTSE Scholar",
       description:
         "Cleared all stages of the National Talent Search Examination.",
+        link:"",
     },
     {
       icon: <Users className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "XENIA’25 Coordinator",
       description:
         "Coordinated and led XENIA’25, an annual technical event under the PCSB club, with 2000+ registrations.",
+        link:"",
+      
     },
     {
       icon: <Code2 className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "C++ Fundamentals Speaker",
       description:
         "Delivered a session on fundamental C++ concepts to more than 150 first-year students.",
+        link:"",
     },
   ];
 
@@ -211,9 +216,14 @@ function Section() {
                 >
                   <div className="flex items-center mb-1">
                     {award.icon}
-                    <h2 className="text-lg font-semibold text-yellow-400">
+                    <a
+                      href={award.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-md text-yellow-400 font-medium hover:underline cursor-pointer"
+                    >
                       {award.title}
-                    </h2>
+                    </a>
                   </div>
                   <p className="text-sm text-gray-300">{award.description}</p>
                 </div>
