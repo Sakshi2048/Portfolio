@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 function Navbar() {
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/5 border-b border-white/20 shadow-lg z-50 flex items-center p-8 justify-between">
+      <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/5 border-b border-white/20 shadow-lg z-50 flex items-center p-5 justify-between">
         <div className="ml-8 flex items-center text-white">
           <GraduationCap
             size={28}
@@ -75,6 +75,15 @@ function Navbar() {
             href="https://drive.google.com/file/d/1n9ZxO8TqxyoAmVGCgGqlzibwD8ioQ_jq/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href =
+                "https://drive.google.com/uc?export=download&id=1n9ZxO8TqxyoAmVGCgGqlzibwD8ioQ_jq";
+              link.download = "Sakshi_Resume.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
           >
             <button className="bg-blue-500 hover:bg-white hover:text-black px-6 py-1 rounded-full font-medium transition duration-300">
               Resume

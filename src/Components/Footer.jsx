@@ -68,8 +68,8 @@ function Footer() {
       </div>
 
       {/* Copyright */}
-      <p className="text-center text-gray-400 text-sm">
-        &copy; 2025 All rights reserved.
+      <p className="text-center text-gray-300 text-sm">
+        &copy; SakshiMarbhal 2025 All rights reserved
       </p>
     </footer>
   );
