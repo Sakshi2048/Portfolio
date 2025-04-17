@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Trophy, Award, Users, Code2, ChevronRight } from "lucide-react";
 
+
 // Clubs list moved above the state
 const clubsList = [
   {
@@ -11,6 +12,7 @@ const clubsList = [
       "• Coordinated XENIA'25, the annual technical event.\n" +
       "• Led the development of the official XENIA'25 website.\n" +
       "• Mentored 150+ students on fundamental C++ concepts.",
+    link:"https://www.linkedin.com/company/pict-csi",
   },
   {
     logo: "https://www.nss.gtu.ac.in/images/nss.png",
@@ -19,6 +21,7 @@ const clubsList = [
     description:
       "• Participated in environmental initiatives like tree plantation drives.\n" +
       "• Volunteered in organizing and supporting blood donation camps.",
+      link:"https://www.linkedin.com/company/pictnss",
   },
   {
     logo: "https://media-exp1.licdn.com/dms/image/C4E0BAQGtNS5QMPEo-w/company-logo_200_200/0?e=2159024400&v=beta&t=qGnQweyUAeXPCyIrQbFKARzAaibjzqdY3lFxsDhOlkI",
@@ -28,6 +31,7 @@ const clubsList = [
       "• An NGO focused on women’s empowerment.\n" +
       "• Trained in corporate etiquette, communication, and leadership skills.\n" +
       "• Participated in regular workshops on soft skills and professional development.",
+      link:"https://katalystindia.org/",
   },
 ];
 
@@ -242,37 +246,39 @@ function Section() {
 
         {/* Clubs */}
         {activeTab === "clubs" && (
-          <div className="text-center w-full mb-10 text-white">
-            <h1 className="text-2xl font-bold title-font mb-6">
-              Clubs & <span className="text-blue-400">Societies</span>
-            </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {clubsList.map((club, idx) => (
-                <div
-                  key={idx}
-                  className="border border-gray-700 rounded-lg p-3 bg-gray-900 text-left"
-                >
-                  <div className="flex items-center gap-3 mb-2">
-                    <img
-                      src={club.logo}
-                      alt={club.name}
-                      className="w-10 h-10 rounded-full object-cover"
-                    />
-                    <div>
-                      <h3 className="text-md text-blue-400 font-medium">
-                        {club.name}
-                      </h3>
-                      <p className="text-sm text-gray-400">{club.position}</p>
-                    </div>
-                  </div>
-                  <div className="text-sm text-gray-300 whitespace-pre-line border-t border-gray-700 pt-2 pl-1">
-                    {club.description}
-                  </div>
-                </div>
-              ))}
+  <div className="text-center w-full mb-10 text-white">
+    <h1 className="text-2xl font-bold title-font mb-6">
+      Clubs & <span className="text-blue-400">Societies</span>
+    </h1>
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      {clubsList.map((club, idx) => (
+        <div
+          key={idx}
+          className="border border-gray-700 rounded-lg p-3 bg-gray-900 text-left"
+        >
+          <div className="flex items-center gap-3 mb-2">
+            <img
+              src={club.logo}
+              alt={club.name}
+              className="w-10 h-10 rounded-full object-cover"
+            />
+            <div>
+              <h3 className="text-md text-blue-400 font-medium">
+                <a href={club.link} target="_blank" rel="noopener noreferrer">
+                  {club.name}
+                </a>
+              </h3>
+              <p className="text-sm text-gray-400">{club.position}</p>
             </div>
           </div>
-        )}
+          <div className="text-sm text-gray-300 whitespace-pre-line border-t border-gray-700 pt-2 pl-1">
+            {club.description}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 
         {/* Certificates */}
         {activeTab === "certificates" && (
