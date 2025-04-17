@@ -39,12 +39,12 @@ function Section() {
   const [activeTab, setActiveTab] = useState("education");
 
   const tabClasses = (tab) =>
-    `tab-btn sm:px-6 py-3 w-full sm:w-auto justify-center sm:justify-start title-font font-medium inline-flex items-center leading-none tracking-wider rounded-full ${
+    `tab-btn px-3 sm:px-6 py-2 sm:py-3 w-fit sm:w-auto justify-center sm:justify-start title-font font-medium inline-flex items-center leading-none tracking-wider rounded-full ${
       activeTab === tab
         ? "bg-blue-500 text-white"
         : "text-gray-400 hover:text-gray-200"
     }`;
-
+  
   const educationList = [
     {
       institute: "Pune Institute of Computer Technology, Pune",
@@ -282,7 +282,7 @@ function Section() {
 
         {/* Certificates */}
         {activeTab === "certificates" && (
-          <div className="text-center w-full mb-10 text-white">
+          <div className="text-center w-full mb-10 text-white px-6">
             <h1 className="text-2xl font-bold title-font mb-6">
               Certifications & <span className="text-blue-400">Courses</span>
             </h1>

@@ -80,12 +80,16 @@ export default function TechStack() {
   const hasIcons = selectedSkills.some((s) => s.icon);
 
   return (
-    <div className="bg-black text-white px-6 py-12 flex flex-col items-center" id="skills">
+    <div
+      className="bg-black text-white px-10 py-12 flex flex-col items-center"
+      id="skills"
+    >
       <h2 className="text-4xl font-bold mb-4 text-center">
         My <span className="text-blue-500">Skills</span>
       </h2>
       <p className="text-gray-400 text-center max-w-4xl mb-8">
-        A diverse skill set that empowers me to create responsive, user-friendly, scalable, and intelligent digital solutions.
+        A diverse skill set that empowers me to create responsive,
+        user-friendly, scalable, and intelligent digital solutions.
       </p>
 
       {/* Tabs */}

@@ -4,7 +4,7 @@ import profile from "../assets/ExtraImages/profile2.jpg";
 export default function About() {
   return (
     <div
-      className="bg-black pb-14 text-white w-full flex flex-col items-center px-8 md:pt-16 md:pb-28 sm:pb-8"
+      className="bg-black pb-14 text-white w-full flex flex-col items-center px-8 md:pt-16 pt-8 md:pb-28 sm:pb-10"
       id="about"
     >
       <h2 className="text-4xl font-bold mb-4 text-center">
