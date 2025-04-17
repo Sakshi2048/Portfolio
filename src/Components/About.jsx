@@ -11,7 +11,7 @@ export default function About() {
         About <span className="text-blue-500">Me</span>
       </h2>
 
-      <div className="flex flex-col md:flex-row items-stretch justify-between w-full max-w-6xl gap-8">
+      <div className="flex flex-col md:flex-row items-stretch justify-between w-full max-w-6xl gap-4 ">
         {/* Left Text Section */}
         <div className="md:w-2/3 flex flex-col justify-between">
           <div className="pl-4">
@@ -42,13 +42,14 @@ export default function About() {
                 user-friendly web applications.
               </span>
               <br /> I have hands-on experience in UI/UX design, frontend
-              development, GenAI-powered application development. I enjoy blending
-              clean UI with powerful backend logic, making sure performance and
-              usability go hand in hand. I believe in learning by building, and
-              I’m always exploring ways to solve real-world problems with tech. As
-              a fast learner, I collaborate closely with team members & clients to
-              bring their ideas to life and adapt quickly to new technologies and
-              frameworks. Lately, I’ve been leveraging{" "}
+              development, GenAI-powered application development. I enjoy
+              blending clean UI with powerful backend logic, making sure
+              performance and usability go hand in hand. I believe in learning
+              by building, and I’m always exploring ways to solve real-world
+              problems with tech. As a fast learner, I collaborate closely with
+              team members & clients to bring their ideas to life and adapt
+              quickly to new technologies and frameworks. Lately, I’ve been
+              leveraging{" "}
               <span className="font-semibold text-zinc-200">
                 Generative AI
               </span>{" "}
