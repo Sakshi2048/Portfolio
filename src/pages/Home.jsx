@@ -6,7 +6,6 @@ import About from "../Components/About"
 import ProjectsAll from "../Components/Skills"
 import Text from "../Components/Text"
 import Projects from "../Components/Projects"
-import Contact from "../Components/Contact"
 import Footer from "../Components/Footer"
 import CTA from '../Components/CTA'
 import Section from '../Components/Section'

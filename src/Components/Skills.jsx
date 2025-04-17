@@ -80,16 +80,12 @@ export default function TechStack() {
   const hasIcons = selectedSkills.some((s) => s.icon);
 
   return (
-    <div
-      className="bg-black text-white px-28 py-12 flex flex-col items-center"
-      id="skills"
-    >
+    <div className="bg-black text-white px-6 py-12 flex flex-col items-center" id="skills">
       <h2 className="text-4xl font-bold mb-4 text-center">
         My <span className="text-blue-500">Skills</span>
       </h2>
       <p className="text-gray-400 text-center max-w-4xl mb-8">
-        A diverse skill set that empowers me to create Responsive,
-        user-friendly, scalable and intelligent digital solutions.
+        A diverse skill set that empowers me to create responsive, user-friendly, scalable, and intelligent digital solutions.
       </p>
 
       {/* Tabs */}
@@ -113,16 +109,16 @@ export default function TechStack() {
       <div
         className={`grid gap-6 w-full max-w-6xl ${
           selectedSkills.length <= 3
-            ? "grid-cols-1 sm:grid-cols-3 justify-center px-40"
+            ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center"
             : hasIcons
-            ? "grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9"
+            ? "grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7"
             : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
         }`}
       >
         {selectedSkills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-zinc-900 hover:bg-zinc-700 hover:scale-110 p-4 rounded-xl  transition-transform"
+            className="flex flex-col items-center bg-zinc-900 hover:bg-zinc-700 hover:scale-110 p-4 rounded-xl transition-transform"
           >
             {skill.icon && (
               <skill.icon
@@ -130,7 +126,7 @@ export default function TechStack() {
                 className={`${skill.color} mb-2 transition-transform duration-300`}
               />
             )}
-            <span className={`text-sm font-medium  ${skill.color}`}>
+            <span className={`text-sm font-medium ${skill.color}`}>
               {skill.name}
             </span>
           </div>
