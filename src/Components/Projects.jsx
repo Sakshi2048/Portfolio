@@ -19,7 +19,7 @@ import {
 
 import codedocs from "../assets/ProjectsImages/codedocs.png"
 import crop from "../assets/ProjectsImages/crop.png";
-import pricehunt from "../assets/ProjectsImages/pricehunt.png";
+import pricehunt from "../assets/ProjectsImages/pricehunt.jpg";
 import hackohire from "../assets/ProjectsImages/HomePage.png";
 import food from "../assets/ProjectsImages/food.png";
 

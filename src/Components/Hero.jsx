@@ -1,5 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -29,7 +30,8 @@ const Hero = () => {
 
           <h1 className="text-4xl font-bold text-center  text-white">
             I’m <span className="text-yellow-500">Sakshi Marbhal</span> <br />
-            <span className="text-blue-400 text-3xl font-medium">a&nbsp;
+            <span className="text-blue-400 text-3xl font-medium">
+              a&nbsp;
               <TypeAnimation
                 sequence={[
                   "Full Stack Web Developer",
@@ -52,13 +54,17 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="flex justify-center gap-4 mt-6 ">
-            <a
+            <ScrollLink
               href="#projects"
               className="bg-blue-500 hover:bg-white hover:text-black px-6 py-3 rounded-full font-medium transition duration-300"
               offset={-300}
+              to="projects"
+              smooth={true}
+              duration={500}
+              spy={true}
             >
               View Projects
-            </a>
+            </ScrollLink>
             <a
               href="https://drive.google.com/file/d/1n9ZxO8TqxyoAmVGCgGqlzibwD8ioQ_jq/view?usp=drive_link"
               target="_blank"
