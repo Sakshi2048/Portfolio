@@ -117,6 +117,12 @@ function Section() {
       link: "https://drive.google.com/file/d/1eEnaiXaOPUzablo_wCmAX5R1PiwWrFiN/view?usp=sharing",
     },
     {
+      logo: "https://logowik.com/content/uploads/images/goldman-sachs3788.logowik.com.webp",
+      title: "iWE League Scholars Program 2024",
+      date: "June 2024",
+      link: "https://drive.google.com/file/d/1Nu3ppNvt59KdkWZcUtjJvbTYqrYrY0_p/view?usp=sharing",
+    },
+    {
       logo: "https://pictinc.org/assets/logo-d2Ig4sgZ.svg",
       title: "INC'23 - Volunteering & Management ",
       date: "April 2023",

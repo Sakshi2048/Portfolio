@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaReact, FaNodeJs, FaPython, FaGithub,FaConfluence } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaPython, FaGithub, FaConfluence } from "react-icons/fa";
 import { RiGeminiFill } from "react-icons/ri";
 import { FaAws } from "react-icons/fa6";
 import {
@@ -7,6 +7,7 @@ import {
   SiMongodb,
   SiFirebase,
   SiFlask,
+  SiPython,
   SiTypescript,
   SiExpress,
   SiEjs,
@@ -15,10 +16,12 @@ import {
   SiJira
 } from "react-icons/si";
 
+
 import codedocs from "../assets/ProjectsImages/codedocs.png"
 import crop from "../assets/ProjectsImages/crop.png";
 import pricehunt from "../assets/ProjectsImages/pricehunt.png";
 import hackohire from "../assets/ProjectsImages/HomePage.png";
+import food from "../assets/ProjectsImages/food.png";
 
 const techIcons = {
   "React.js": <FaReact className="text-blue-400" />,
@@ -36,9 +39,47 @@ const techIcons = {
   EJS: <SiEjs className="text-purple-400" />,
   Typescript: <SiTypescript className="text-blue-500" />,
   Jira: <SiJira className="text-blue-500" />,
+  Python: <FaPython className="text-yellow-500" />,  
   Confluence: <FaConfluence className="text-blue-500" />,
+
   
+  Streamlit: (
+    <img
+      src="https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png"
+      alt="Streamlit"
+      className="w-7 h-7 rounded-full"
+    />
+  ),
+  Tensorflow: (
+    <img
+      src="https://seeklogo.com/images/T/tensorflow-logo-02FCED4F98-seeklogo.com.png"
+      alt="TensorFlow"
+      className="w-7 h-7 rounded-full"
+    />
+  ),
+  Numpy: (
+    <img
+      src="https://seeklogo.com/images/N/numpy-logo-479C24EC79-seeklogo.com.png"
+      alt="NumPy"
+      className="w-7 h-7 rounded-full"
+    />
+  ),
+  Pandas: (
+    <img
+      src="https://th.bing.com/th/id/OIP.JyjxWSGGUln8eb8idBZ8VQAAAA?rs=1&pid=ImgDetMain"
+      alt="Pandas"
+      className="w-7 h-7 rounded-full"
+    />
+  ),
+  OpenCV: (
+    <img
+      src="https://th.bing.com/th/id/OIP.Q-wgyMJtkHKZr0L9x5ub7AHaHa?rs=1&pid=ImgDetMain"
+      alt="OpenCV"
+      className="w-7 h-7 rounded-full "
+    />
+  ),
 };
+
 
 const MiniCard = ({ title, shortDesc, index, isActive, onClick }) => (
   <div
@@ -125,6 +166,25 @@ const Projects = () => {
       ],
       link: "https://github.com/Sakshi2048/CodeDocs.git",
     },
+
+    {
+      imageSrc: food,
+      title: "Food Recognition",
+      shortDesc: "Indian Food Recognition using ML",
+      description:
+        "An AI-driven application for recognizing Indian foods from images using Machine Learning. The model, built with ResNet50, classifies various regional Indian dishes with high accuracy. It uses data augmentation and preprocessing to improve model performance. Deployed on Streamlit, the app allows users to upload food images for instant recognition and provides an interactive experience.",
+        technologies: [
+          "Python",
+          "Streamlit",
+          "Tensorflow",
+         "Numpy",
+          "Pandas",
+          "OpenCV",
+         
+        ],
+      link: "https://github.com/Sakshi2048/FoodRecognition.git",
+    },
+
     {
       imageSrc: crop,
       title: "PlantPulse",
