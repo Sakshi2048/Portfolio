@@ -99,7 +99,7 @@ const ProjectCard = ({ imageSrc, title, description, technologies, link }) => {
       <img
         src={imageSrc}
         alt={title}
-        className="w-full lg:w-1/2  object-cover"
+        className="w-full lg:w-1/2  object-content"
       />
       <div className="p-4 flex flex-col justify-between lg:w-1/2">
         <div>
@@ -135,7 +135,7 @@ const Projects = () => {
       title: "Hack-O-Hire",
       shortDesc: "Automated requirement generation",
       description:
-        "Automated Requirement Generation. AI-powered code documentation system that automates the generation of clear, structured documentation. A Generative AI is used for generating documentation.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, porro animi dignissimos, veritatis alias reprehenderit facere quo laudantium dolorum deserunt, quasi sapiente incidunt!",
+        "This project utilizes Generative automate requirement gathering by analyzing textual and graphic inputs, extracting functional and non-functional requirements, and organizing them into standardized documents. It generates requirement documents, exports user stories to Jira for backlog updates, and integrates with Confluence for documentation management. Additionally, it highlights missing information and allows version-controlled document management.",
       technologies: [
         "React.js",
         "Tailwind",
@@ -182,7 +182,7 @@ const Projects = () => {
           "OpenCV",
          
         ],
-      link: "https://github.com/Sakshi2048/FoodRecognition.git",
+      link: "https://github.com/Sakshi2048/Food-Recognition-using-ML.git",
     },
 
     {

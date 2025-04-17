@@ -71,7 +71,7 @@ const skills = {
 };
 
 export default function TechStack() {
-  const [activeCategory, setActiveCategory] = useState("Web Development");
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const allSkills = Object.values(skills).flat();
   const selectedSkills =
@@ -87,9 +87,9 @@ export default function TechStack() {
       <h2 className="text-4xl font-bold mb-4 text-center">
         My <span className="text-blue-500">Skills</span>
       </h2>
-      <p className="text-gray-400 text-center max-w-3xl mb-8">
-        A comprehensive toolkit that enables me to build scalable, secure, and
-        intelligent digital solutions.
+      <p className="text-gray-400 text-center max-w-4xl mb-8">
+        A diverse skill set that empowers me to create Responsive,
+        user-friendly, scalable and intelligent digital solutions.
       </p>
 
       {/* Tabs */}
@@ -111,15 +111,14 @@ export default function TechStack() {
 
       {/* Skills Grid */}
       <div
-  className={`grid gap-6 w-full max-w-6xl ${
-    selectedSkills.length <= 3
-      ? "grid-cols-1 sm:grid-cols-3 justify-center px-40"
-      : hasIcons
-      ? "grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9"
-      : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
-  }`}
->
-
+        className={`grid gap-6 w-full max-w-6xl ${
+          selectedSkills.length <= 3
+            ? "grid-cols-1 sm:grid-cols-3 justify-center px-40"
+            : hasIcons
+            ? "grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9"
+            : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
+        }`}
+      >
         {selectedSkills.map((skill, index) => (
           <div
             key={index}
