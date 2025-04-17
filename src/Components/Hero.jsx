@@ -48,9 +48,10 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg text-gray-300 text-center">
-            I love building modern, user-friendly web applications using the
-            MERN stack.
-          </p>
+  I love building modern, user-friendly web applications using the MERN stack.
+</p>
+
+
 
           {/* Buttons */}
           <div className="flex justify-center gap-4 mt-6 ">
@@ -77,28 +78,32 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Transparent 3D Down Arrow Scroll Button with Blue Shadow and Circular Shape */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-        <ScrollLink
-          to="about"
-          smooth={true}
-          duration={500}
-          offset={-70}
-          className="cursor-pointer"
-        >
-          <div className="animate-bounce w-10 h-10 bg-transparent border border-blue-500 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110">
-            <span
-              className="text-blue-500 text-3xl drop-shadow-[0_0_15px_rgba(59,130,246,0.9)]"
-              style={{
-                textShadow:
-                  "0 0 10px rgba(59,130,246,0.7), 0 0 20px rgba(59,130,246,0.5)",
-              }}
-            >
-              ↓
-            </span>
-          </div>
-        </ScrollLink>
-      </div>
+      
+   {/* Transparent 3D Down Arrow Scroll Button with Blue Shadow and Circular Shape */}
+<div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+  <ScrollLink
+    to="about"
+    smooth={true}
+    duration={500}
+    offset={-70}
+    className="cursor-pointer"
+  >
+    <div
+      className="animate-bounce w-10 h-10 bg-transparent border border-blue-500 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110"
+    >
+      <span
+        className="text-blue-500 text-3xl drop-shadow-[0_0_15px_rgba(59,130,246,0.9)]"
+        style={{
+          textShadow: '0 0 10px rgba(59,130,246,0.7), 0 0 20px rgba(59,130,246,0.5)',
+        }}
+      >
+        ↓
+      </span>
+    </div>
+  </ScrollLink>
+</div>
+
+
     </section>
   );
 };
