@@ -70,21 +70,29 @@ function Section() {
       icon: <Trophy className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "Pulzion Web & App Hackathon",
       description: "Runner-up at Pulzion Web & App Hackathon 2023.",
-      link:"",
+      link:"https://www.linkedin.com/posts/sakshim2048_codedocs-codedocs-hackathon-activity-7248897339388518401-TqO0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgl-34BwXrKSnPp-pgrVH0hUkFlGgnwnCA",
     },
     {
       icon: <Award className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "NTSE Scholar",
       description:
         "Cleared all stages of the National Talent Search Examination.",
-        link:"",
+        link:"https://www.linkedin.com/in/sakshim2048/",
+    },
+    {
+      icon: <Users className="w-5 h-5 text-yellow-400 mr-2" />,
+      title: "FE Carnival Coordinator",
+      description:
+        "Coordinated and led FE Carnival, an annual technical event under the PCSB club, with 280+ registrations.",
+        link:"https://www.linkedin.com/posts/sakshim2048_overallcoordinator-fecarnival-csipict-activity-7252659935572828160-yIw1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgl-34BwXrKSnPp-pgrVH0hUkFlGgnwnCA",
+      
     },
     {
       icon: <Users className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "XENIA’25 Coordinator",
       description:
         "Coordinated and led XENIA’25, an annual technical event under the PCSB club, with 2000+ registrations.",
-        link:"",
+        link:"https://www.linkedin.com/posts/pict-csi_xenia25-pcsb-csi-activity-7298976359454793728-gxwG?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgl-34BwXrKSnPp-pgrVH0hUkFlGgnwnCA ",
       
     },
     {
@@ -92,7 +100,7 @@ function Section() {
       title: "C++ Fundamentals Speaker",
       description:
         "Delivered a session on fundamental C++ concepts to more than 150 first-year students.",
-        link:"",
+        link:"https://www.linkedin.com/posts/sakshim2048_pcsb-cppsig-codingbeginners-activity-7277997063802380288-QojR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgl-34BwXrKSnPp-pgrVH0hUkFlGgnwnCA",
     },
   ];
 
