@@ -11,14 +11,11 @@ function CTA() {
         <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
           <div className="lg:w-4/5 md:w-1/2 md:pr-16 lg:pr-6 pr-2">
             <h1 className="title-font font-bold text-3xl text-gray-200">
-              <span className="text-blue-400">Curious</span> to Know More?
+              <span className="text-blue-400">Let's</span> Connect!
             </h1>
             <p className="leading-relaxed mt-4 text-gray-400">
-              Apart from development and cutting-edge tech, I'm actively
-              involved in co-curricular activities like organizing events,
-              participating in hackathons, and engaging with communities. <br />{" "}
-              I believe in a holistic growth journey — blending tech,
-              creativity, and collaboration!
+              Whether you have a question, want to collaborate, or just want to say hi — my inbox is always open. <br />
+              I'm always excited to connect with fellow tech enthusiasts, recruiters, or anyone curious about what I do.
             </p>
           </div>
           <div className="lg:w-1/8 md:w-1/4 rounded-lg flex flex-col md:ml-auto w-full mt-10 md:mt-0">

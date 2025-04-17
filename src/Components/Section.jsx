@@ -69,21 +69,21 @@ function Section() {
     {
       icon: <Trophy className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "Pulzion Web & App Hackathon",
-      description: "Runner-up at Pulzion Web & App Hackathon 2023.",
+      description: "Runner-up of a AI based Hackathon organized by the PICT ACM Student Chapter & sponsored by Worqhat.",
       link:"https://www.linkedin.com/posts/sakshim2048_codedocs-codedocs-hackathon-activity-7248897339388518401-TqO0?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgl-34BwXrKSnPp-pgrVH0hUkFlGgnwnCA",
     },
-    {
-      icon: <Award className="w-5 h-5 text-yellow-400 mr-2" />,
-      title: "NTSE Scholar",
-      description:
-        "Cleared all stages of the National Talent Search Examination.",
-        link:"https://www.linkedin.com/in/sakshim2048/",
-    },
+    // {
+    //   icon: <Award className="w-5 h-5 text-yellow-400 mr-2" />,
+    //   title: "NTSE Scholar",
+    //   description:
+    //     "Cleared all stages of the National Talent Search Examination.",
+    //     link:"https://www.linkedin.com/in/sakshim2048/",
+    // },
     {
       icon: <Users className="w-5 h-5 text-yellow-400 mr-2" />,
       title: "FE Carnival Coordinator",
       description:
-        "Coordinated and led FE Carnival, an annual technical event under the PCSB club, with 280+ registrations.",
+        "Coordinated and led FE Carnival, a fun and engaging event designed for 1st year students to connect & collaborate, with 280+ registrations.",
         link:"https://www.linkedin.com/posts/sakshim2048_overallcoordinator-fecarnival-csipict-activity-7252659935572828160-yIw1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgl-34BwXrKSnPp-pgrVH0hUkFlGgnwnCA",
       
     },
