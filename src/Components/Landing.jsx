@@ -35,7 +35,7 @@ const Landing = () => {
         </h3>
 
         <p className="text-base sm:text-lg text-gray-300 mt-6 max-w-xl">
-          I love building modern, user-friendly web applications using the MERN
+          I love building modern, user-friendly & AI powered web applications using the MERN
           stack.
         </p>
 

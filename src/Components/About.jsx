@@ -35,7 +35,7 @@ export default function About() {
                 />
               </span>
             </h1>
-            <p className="text-md text-zinc-400 leading-relaxed mt-2 text-justify">
+            <p className="text-md text-zinc-400 leading-relaxed mt-2 text-justify ">
               I'm a passionate web developer who loves crafting smart,
               <span className="font-semibold text-zinc-200">
                 {" "}
