@@ -13,13 +13,13 @@ function Text() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="bg-black ">
+    <div className=" ">
      
-      <div className="bg-black relative isolate overflow-hidden py-20 flex justify-center pt-20">
+      <div className="bg-gradient-to-b from-[#050E1F] via-[#010b1c] to-black relative isolate overflow-hidden py-20 flex justify-center pt-20">
         <div>
           <h1 className="text-3xl px-24 font-bold  tracking-tight text-white sm:text-4xl  ">
             Let's{" "}
-            <span className="text-yellow-500 text-6xl sm:text-5xl">
+            <span className="text-yellow-500 text-5xl sm:text-5xl">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={words[index]}
@@ -39,7 +39,7 @@ function Text() {
             something beautiful together !
           </h1>
           <p className="text-gray-400 px-24 pt-2">
-          I’ve actively contributed to diverse team-based projects that pushed my boundaries and strengthened my skills in full-stack development and AI integration. Each project reflects not only my technical learning but also collaboration, problem-solving, and a strong passion for building scalable and impactful solutions.
+          I’ve actively contributed to diverse team-based projects that pushed my boundaries and strengthened my skills in full-stack development and AI integration as well as collaboration & problem-solving.
           </p>
         </div>
 

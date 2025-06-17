@@ -36,12 +36,11 @@ function Navbar() {
 
           {/* Navigation Links */}
           <nav
-  className={`${
-    menuOpen ? "flex" : "hidden"
-  } md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-black/70 md:bg-transparent px-6 md:px-0 py-4 md:py-0 space-y-4 md:space-y-0 md:space-x-6 text-white font-semibold transition-all duration-300 z-40
+            className={`${
+              menuOpen ? "flex" : "hidden"
+            } md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-black/70 md:bg-transparent px-6 md:px-0 py-4 md:py-0 space-y-4 md:space-y-0 md:space-x-6 text-white font-semibold transition-all duration-300 z-40
     items-center text-center`}
->
-
+          >
             <ScrollLink
               to="home"
               smooth={true}

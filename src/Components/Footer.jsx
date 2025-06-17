@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="flex flex-col space-y-10 justify-center p-10 bg-zinc-950">
+    <footer className="flex flex-col space-y-10 justify-center pb-6 bg-gradient-to-t from-[#050E1F] via-[#000610] to-black">
       {/* Social Links */}
       <div className="flex justify-center space-x-5">
         <a
@@ -48,7 +48,7 @@ function Footer() {
           />
         </a>
 
-        <a
+        {/* <a
           href="https://leetcode.com/u/Sakshi_2048/"
           target="_blank"
           rel="noopener noreferrer"
@@ -59,7 +59,7 @@ function Footer() {
             style={{ width: "30px", height: "30px" }}
             className="w-10 h-10 hover:scale-110 transition-transform"
           />
-        </a>
+        </a> */}
 
         <a
           href="mailto:sakshimarbhal248@gmail.com"

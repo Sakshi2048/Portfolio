@@ -4,7 +4,7 @@ import profile from "../assets/ExtraImages/profile2.jpg";
 export default function About() {
   return (
     <div
-      className="bg-black pb-14 text-white w-full flex flex-col items-center px-8 md:pt-16 pt-8 md:pb-28 sm:pb-10"
+      className="bg-gradient-to-t from-[#050E1F] via-[#01102a] to-black pb-14 text-white w-full flex flex-col items-center px-8 md:pt-2 pt-3 md:pb-28 sm:pb-10"
       id="about"
     >
       <h2 className="text-4xl font-bold mb-4 text-center">
@@ -42,10 +42,7 @@ export default function About() {
                 user-friendly web applications.
               </span>
               <br /> I have hands-on experience in UI/UX design, frontend
-              development, GenAI-powered application development. I enjoy blending
-              clean UI with powerful backend logic, making sure performance and
-              usability go hand in hand. I believe in learning by building, and
-              I’m always exploring ways to solve real-world problems with tech. As
+              development, GenAI-powered application development.As
               a fast learner, I collaborate closely with team members & clients to
               bring their ideas to life and adapt quickly to new technologies and
               frameworks. Lately, I’ve been leveraging{" "}
@@ -53,8 +50,7 @@ export default function About() {
                 Generative AI
               </span>{" "}
               to build intelligent, adaptive solutions that enhance user
-              experience and functionality. Apart from coding, you'll find me
-              diving into new tech trends and technologies.
+              experience and functionality.
             </p>
           </div>
 

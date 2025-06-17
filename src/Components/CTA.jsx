@@ -2,32 +2,18 @@ import React from "react";
 
 function CTA() {
   return (
-    <div>
-      <section className="body-font px-6 bg-black" id="contact">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
-          {/* Left Text Section */}
-          <div className="lg:w-3/5 md:w-1/2 w-full text-center lg:text-left">
-            <h1 className="title-font font-bold text-3xl text-gray-200">
-              <span className="text-blue-400">Let's</span> Connect!
-            </h1>
-            <p className="leading-relaxed mt-4 text-gray-400">
-              Whether you have a question, want to collaborate, or just want to say hi — my inbox is always open. <br />
-              I'm always excited to connect with fellow tech enthusiasts, recruiters, or anyone curious about what I do.
-            </p>
-          </div>
-
-          {/* Contact Button Section */}
-          <div className="lg:w-1/3 md:w-1/4 w-full mt-10 md:mt-0 flex justify-center">
-            <a
-              href="mailto:sakshimarbhal248@gmail.com"
-              className="bg-blue-500 hover:bg-white text-white hover:text-black px-6 py-3 rounded-full font-medium transition duration-300"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+    <section className="px-6 bg-gradient-to-b from-[#050E1F] via-[#010b1c] to-black text-white pt-16 pb-6" id="contact">
+      <div className="max-w-4xl mx-auto text-center px-4">
+        <h1 className="text-3xl sm:text-4xl font-bold">
+          <span className="text-blue-400">Let's</span> Connect !
+        </h1>
+        <p className="mt-4 text-gray-400 text-base sm:text-small leading-relaxed">
+          Whether you have a question, want to collaborate, or just want to say hi — my inbox is always open.
+         
+        </p>
+       
+      </div>
+    </section>
   );
 }
 

@@ -81,7 +81,7 @@ export default function TechStack() {
 
   return (
     <div
-      className="bg-black text-white px-10 py-12 flex flex-col items-center"
+      className=" bg-gradient-to-t from-[#050E1F] via-[#010b1c] to-black text-white px-10 py-12 flex flex-col items-center"
       id="skills"
     >
       <h2 className="text-4xl font-bold mb-4 text-center">
@@ -115,14 +115,14 @@ export default function TechStack() {
           selectedSkills.length <= 3
             ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center"
             : hasIcons
-            ? "grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7"
+            ? "grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-9"
             : "grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
         }`}
       >
         {selectedSkills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-zinc-900 hover:bg-zinc-700 hover:scale-110 p-4 rounded-xl transition-transform"
+            className="flex flex-col items-center bg-zinc-950 border-zinc-800 border-1 hover:bg-zinc-700 hover:scale-110 p-4 rounded-xl transition-transform"
           >
             {skill.icon && (
               <skill.icon

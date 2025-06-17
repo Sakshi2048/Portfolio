@@ -9,13 +9,14 @@ import Projects from "../Components/Projects"
 import Footer from "../Components/Footer"
 import CTA from '../Components/CTA'
 import Section from '../Components/Section'
-
+import Landing from '../Components/Landing'
 
 function Home() {
   return (
     <div>
       <Navbar/>
-      <Hero/>
+      {/* <Hero/> */}
+      <Landing/>
       <About/>
       <Section/>
       <ProjectsAll/>
